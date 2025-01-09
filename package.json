@@ -1,7 +1,7 @@
 {
   "name": "timepass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este ejercicio utiliza [Express](https://expressjs.com/) para construir un servidor web simple con dos rutas y middleware para obtener la hora actual y validar si la hora es correcta y poder entrar en una ruta específica.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "4.18.2"
+    "express": "^4.18.2"
   }
 }
