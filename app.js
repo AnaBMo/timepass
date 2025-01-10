@@ -8,6 +8,8 @@ const app = express();
 const indexRoute = require('./routes/index')
 const endrouteRoute = require('./routes/endroute');
 
+app.use(obtenerHoraActual);
+
 app.use('/endroute', endrouteRoute); 
 app.use('/', indexRoute);
 

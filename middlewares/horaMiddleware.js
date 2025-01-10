@@ -7,7 +7,7 @@
 const obtenerHoraActual = (req, res, next) => {
     const now = new Date();
     req.horaActual = now.getHours(); // necesitamos números enteros para comparar con la franja válida
-    req.horaFormatoCompleto = `${now.getHours()}:${now.getMinutes()}`; // después se formatea para mostrar
+    req.horaFormatoCompleto = `${req.horaActual}:${now.getMinutes()}`; // después se formatea para mostrar
     next();
 };
 

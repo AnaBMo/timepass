@@ -7,12 +7,11 @@ Un texto dando la bienvenida y la ruta donde estamos.
 const express = require('express');
 const router = express.Router(); 
 
-const horaMiddleware = require('../middlewares/horaMiddleware');
 const validarHoraActual = require('../middlewares/validarHora');
 
 // ruta accesible solo si se pasa la validación de hora, por tanto hay que traer los 
 // módulos de la validación y usarlos
-router.get('/', horaMiddleware, validarHoraActual, (req, res) => {
+router.get('/', validarHoraActual, (req, res) => {
     res.send(`
         <h1>Ruta final</h1>
         <h2>¡Bienvenido a la ruta final!</h2>
