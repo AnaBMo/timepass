@@ -5,8 +5,11 @@ middleware y rutas.
 const express = require('express');
 const app = express();
 
-const indexRoute = require('./routes/index')
+const obtenerHoraActual = require('./middlewares/horaMiddleware');
+
+const indexRoute = require('./routes/index');
 const endrouteRoute = require('./routes/endroute');
+
 
 app.use(obtenerHoraActual);
 
